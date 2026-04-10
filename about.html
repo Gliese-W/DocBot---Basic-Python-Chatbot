@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>About</title>
 
-  <link rel="stylesheet" href="static/css/about.css">
+  <link rel="stylesheet" href="/static/css/about.css">
 </head>
 
 <body>
@@ -13,13 +13,13 @@
   <!-- NAVBAR -->
   <div class="navbar">
     <div class="logo">
-      <img src="static/images/logo.jpg" alt="logo">
+      <img src="/static/images/logo.jpg">
     </div>
 
     <div class="nav-links">
-      <a href="templates/index.html">Home</a>
-      <a href="templates/about.html">About</a>
-      <a href="templates/login.html">Login</a>
+      <a href="/">Home</a>
+      <a href="/about">About</a>
+      <a href="/login">Login</a>
     </div>
   </div>
 
@@ -51,17 +51,21 @@
 
   <!-- CHATBOT -->
   <div class="chatbot">
-    <div class="chat-header">Chatbot</div>
 
-    <div class="chat-body">
-      <p>Hello 👋</p>
-    </div>
+  <div class="chat-header">Chatbot</div>
 
-    <div class="chat-input">
-      <input type="text" placeholder="Type...">
-      <button>Send</button>
-    </div>
+  <div class="chat-body" id="chatbox">
+    <p>Hello! How can I help you?</p>
   </div>
+
+  <div class="chat-input">
+    <input id="input" type="text" placeholder="Type a message...">
+    <button onclick="sendMessage()">Send</button>
+  </div>
+
+</div>
+
+<script src="/static/js/script.js"></script>
 
 </body>
 </html>
