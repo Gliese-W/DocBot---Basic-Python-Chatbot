@@ -121,3 +121,10 @@ This chatbot provides general suggestions only and is **not a substitute for pro
 * LinkedIn: https://www.linkedin.com/in/tushar-raghav-right-here/
 
 ---
+
+
+
+## Updates
+
+- Fixed chatbot functionality across all pages
+- Improved routing and project structure
