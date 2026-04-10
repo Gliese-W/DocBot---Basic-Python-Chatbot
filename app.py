@@ -103,7 +103,17 @@ def get_response(user_input):
 
 @app.route("/")
 def home():
-  return send_from_directory('.', 'templates/index.html')
+  return send_from_directory('templates', 'index.html')
+
+@app.route("/about")
+def about_page():
+  return send_from_directory('templates', 'about.html')
+
+@app.route("/login")
+def login_page():
+  return send_from_directory('templates', 'login.html')
+
+
 
 @app.route("/chat", methods=["POST"])
 # def chat():
